@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio | Mai Ngọc Hùng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spaceDark: '#0B0F19',
+                        panelDark: '#131A26',
+                        accentGreen: '#10B981',
+                        accentViolet: '#8B5CF6',
+                        textMuted: '#94A3B8'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-spaceDark text-slate-300 font-['Plus_Jakarta_Sans',sans-serif] antialiased selection:bg-accentViolet selection:text-white">
+
+<aside class="fixed top-0 left-0 h-screen w-full md:w-64 lg:w-80 bg-panelDark border-r border-slate-800/60 z-40 transform -translate-x-full md:translate-x-0 transition-transform duration-300 flex flex-col justify-between p-6" id="sidebar">
+    <div>
+        <div class="mb-8 text-center md:text-left">
+            <div class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gradient-to-br from-accentGreen to-accentViolet text-white text-xl font-bold mb-4">
+                MH
+            </div>
+            <h1 class="text-xl font-extrabold text-white tracking-tight">Mai Ngọc Hùng</h1>
+            <p class="text-xs font-mono text-accentGreen mt-1">MSSV: 25020172</p>
+            <div class="text-[11px] text-textMuted bg-spaceDark/60 px-3 py-1.5 rounded-lg border border-slate-800 mt-3 leading-relaxed">
+                Khoa Công nghệ thông tin<br>
+                Trường Đại học Công nghệ - ĐHQGHN
+            </div>
+        </div>
+
+        <nav class="space-y-1">
+            <a href="#overview" class="nav-link flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-semibold text-slate-400 hover:bg-spaceDark hover:text-white transition-all">
+                <i class="fa-solid fa-user-astronaut text-base"></i>
+                <span>Tổng Quan</span>
+            </a>
+            <a href="#timeline-section" class="nav-link flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-semibold text-slate-400 hover:bg-spaceDark hover:text-white transition-all">
+                <i class="fa-solid fa-route text-base"></i>
+                <span>Dự án thực hiện</span>
+            </a>
+            <a href="#bento-report" class="nav-link flex items-center space-x-3 px-4 py-3 rounded-lg text-sm font-semibold text-slate-400 hover:bg-spaceDark hover:text-white transition-all">
+                <i class="fa-solid fa-chart-pie text-base"></i>
+                <span>Báo Cáo Tổng Kết</span>
+            </a>
+        </nav>
+    </div>
+
+    <div class="pt-4 border-t border-slate-800/60 text-center md:text-left">
+        <p class="text-[11px] text-textMuted font-mono">Môn học: Nhập môn CNS & AI</p>
+        <p class="text-[10px] text-slate-600 mt-1">&copy; 2026 Academic Portfolio</p>
+    </div>
+</aside>
+
+<button class="fixed bottom-6 right-6 z-50 md:hidden w-12 h-12 rounded-full bg-accentViolet text-white flex items-center justify-center shadow-lg shadow-accentViolet/30 focus:outline-none" id="menu-toggle">
+    <i class="fa-solid fa-bars text-lg"></i>
+</button>
+
+<main class="md:ml-64 lg:ml-80 min-h-screen p-6 lg:p-12 space-y-24 max-w-5xl">
+
+    <section id="overview" class="pt-6 md:pt-12 scroll-mt-24">
+        <div class="relative rounded-2xl bg-gradient-to-br from-panelDark to-spaceDark p-8 border border-slate-800/60 overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-accentViolet/5 blur-[80px] rounded-full pointer-events-none"></div>
+
+            <span class="text-xs font-mono tracking-widest text-accentViolet uppercase font-bold bg-accentViolet/10 px-3 py-1 rounded-full">Digital Space Portfolio</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mt-4 mb-6 leading-tight">
+                Khám phá Năng lực số & <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-accentGreen to-accentViolet">Ứng dụng Trí tuệ Nhân tạo</span>
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-8 text-sm leading-relaxed text-textMuted">
+                <div class="space-y-4">
+                    <p>
+                        Chào mừng thầy cô đến với không gian lưu trữ học thuật cá nhân. Đây là nơi hệ thống hóa toàn bộ hành trình trải nghiệm và thực hành các kỹ năng số nền tảng, tập trung vào việc quản lý dữ liệu, đánh giá thông tin và ứng dụng AI có trách nhiệm.
+                    </p>
+                </div>
+                <div class="border-t md:border-t-0 md:border-l border-slate-800/80 pt-6 md:pt-0 md:pl-8 space-y-4">
+                    <div>
+                        <h4 class="text-white font-bold mb-1"><i class="fa-solid fa-bullseye text-accentGreen mr-2"></i>Mục tiêu học tập</h4>
+                        <p class="text-xs">Làm chủ các công cụ cộng tác trực tuyến, tối ưu hóa kỹ năng Prompt Engineering và thiết lập quy trình làm việc nhóm minh bạch, hiệu quả.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline-section" class="scroll-mt-24">
+        <div class="mb-12">
+            <h3 class="text-2xl font-black text-white">Dự án thực hiện</h3>
+            <p class="text-sm text-textMuted mt-1">Cấu trúc dòng chảy thời gian, biên tập toàn bộ kết quả từ Tuần 1 đến Tuần 6.</p>
+        </div>
+
+        <div class="relative border-l border-slate-800 ml-4 md:ml-6 space-y-12">
+
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-spaceDark border-2 border-accentGreen group-hover:bg-accentGreen transition-colors duration-300"></div>
+                <div class="bg-panelDark/40 border border-slate-800/80 rounded-xl p-6 hover:border-slate-700/60 transition-all flex flex-col items-start">
+                    <span class="text-xs font-mono text-accentGreen tracking-widest font-bold">01 - TUẦN 1</span>
+                    <h4 class="text-xl font-bold text-white mt-2 mb-2">Hệ thống tệp & Thư mục</h4>
+                    <p class="text-sm font-medium text-accentGreen/90 mb-4">
+                        Thao tác cơ bản với hệ điều hành, quản lý cấu trúc cây thư mục và lưu trữ dữ liệu máy tính khoa học.
+                    </p>
+                    <div class="pt-4 border-t border-slate-800/50 w-full mb-4">
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            <strong>Chi tiết triển khai:</strong> Sử dụng File Explorer để truy cập ổ đĩa và thiết lập thư mục cá nhân mang tên ThucHanh_MaiNgocHung. Thực hiện thuần thục các thao tác quản lý dữ liệu cốt lõi bao gồm: tạo tệp GhiChuQuanTrong.txt, thiết lập thư mục con TaiLieu, và áp dụng các lệnh sao chép, di chuyển.
+                        </p>
+                    </div>
+                    <a href="assignments/Tuan1.pdf" target="_blank" class="inline-flex items-center text-xs font-bold text-accentGreen bg-accentGreen/10 border border-accentGreen/30 px-4 py-2 rounded-lg hover:bg-accentGreen hover:text-spaceDark transition-all duration-300">
+                        <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Xem báo cáo chi tiết
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-spaceDark border-2 border-accentViolet group-hover:bg-accentViolet transition-colors duration-300"></div>
+                <div class="bg-panelDark/40 border border-slate-800/80 rounded-xl p-6 hover:border-slate-700/60 transition-all flex flex-col items-start">
+                    <span class="text-xs font-mono text-accentViolet tracking-widest font-bold">02 - TUẦN 2</span>
+                    <h4 class="text-xl font-bold text-white mt-2 mb-2">Tìm kiếm thông tin học thuật</h4>
+                    <p class="text-sm font-medium text-accentViolet/90 mb-4">
+                        Khai thác các công cụ tìm kiếm nâng cao, bộ lọc cơ sở dữ liệu và đánh giá độ tin cậy của tài liệu nghiên cứu.
+                    </p>
+                    <div class="pt-4 border-t border-slate-800/50 w-full mb-4">
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            <strong>Chi tiết triển khai:</strong> Nghiên cứu chủ đề Ứng dụng công nghệ trong Y tế và Chăm sóc sức khỏe. Đã thu thập và trích dẫn 10 tài liệu tham khảo theo định dạng Harvard từ IEEE, Nature, WHO và IBM. Phân tích sâu ưu nhược điểm của 3 nhóm tài liệu.
+                        </p>
+                    </div>
+                    <a href="assignments/Tuan2.pdf" target="_blank" class="inline-flex items-center text-xs font-bold text-accentViolet bg-accentViolet/10 border border-accentViolet/30 px-4 py-2 rounded-lg hover:bg-accentViolet hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Xem báo cáo chi tiết
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-spaceDark border-2 border-accentGreen group-hover:bg-accentGreen transition-colors duration-300"></div>
+                <div class="bg-panelDark/40 border border-slate-800/80 rounded-xl p-6 hover:border-slate-700/60 transition-all flex flex-col items-start">
+                    <span class="text-xs font-mono text-accentGreen tracking-widest font-bold">03 - TUẦN 3</span>
+                    <h4 class="text-xl font-bold text-white mt-2 mb-2">Prompt Engineering</h4>
+                    <p class="text-sm font-medium text-accentGreen/90 mb-4">
+                        Sử dụng AI hiệu quả thông qua các câu lệnh (prompt) tối ưu và làm chủ các mô hình ngôn ngữ.
+                    </p>
+                    <div class="pt-4 border-t border-slate-800/50 w-full mb-4">
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            <strong>Chi tiết triển khai:</strong> Thiết kế các bộ câu lệnh từ cơ bản đến nâng cao cho 3 tác vụ môn Tư tưởng Hồ Chí Minh. Ứng dụng thành thạo kỹ thuật Role-playing, Chain-of-thought, và Few-shot Prompting để điều hướng AI trả lời đúng trọng tâm đại học.
+                        </p>
+                    </div>
+                    <a href="assignments/Tuan3.pdf" target="_blank" class="inline-flex items-center text-xs font-bold text-accentGreen bg-accentGreen/10 border border-accentGreen/30 px-4 py-2 rounded-lg hover:bg-accentGreen hover:text-spaceDark transition-all duration-300">
+                        <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Xem báo cáo chi tiết
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-spaceDark border-2 border-accentViolet group-hover:bg-accentViolet transition-colors duration-300"></div>
+                <div class="bg-panelDark/40 border border-slate-800/80 rounded-xl p-6 hover:border-slate-700/60 transition-all flex flex-col items-start">
+                    <span class="text-xs font-mono text-accentViolet tracking-widest font-bold">04 - TUẦN 4</span>
+                    <h4 class="text-xl font-bold text-white mt-2 mb-2">Teamwork & Môi trường số</h4>
+                    <p class="text-sm font-medium text-accentViolet/90 mb-4">
+                        Phối hợp, quản lý dự án và báo cáo hoạt động nhóm trực tuyến bằng các công cụ cộng tác.
+                    </p>
+                    <div class="pt-4 border-t border-slate-800/50 w-full mb-4">
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            <strong>Chi tiết triển khai:</strong> Tích hợp 4 công cụ công nghệ số để tối ưu hóa hiệu suất nhóm: Sử dụng Trello quản lý tiến độ; Soạn thảo tài liệu minh bạch trên Google Docs; Giao tiếp liên tục trên Discord; và tổ chức thư mục phân cấp trên Google Drive.
+                        </p>
+                    </div>
+                    <a href="assignments/Tuan4.pdf" target="_blank" class="inline-flex items-center text-xs font-bold text-accentViolet bg-accentViolet/10 border border-accentViolet/30 px-4 py-2 rounded-lg hover:bg-accentViolet hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Xem báo cáo chi tiết
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-spaceDark border-2 border-accentGreen group-hover:bg-accentGreen transition-colors duration-300"></div>
+                <div class="bg-panelDark/40 border border-slate-800/80 rounded-xl p-6 hover:border-slate-700/60 transition-all flex flex-col items-start">
+                    <span class="text-xs font-mono text-accentGreen tracking-widest font-bold">05 - TUẦN 5</span>
+                    <h4 class="text-xl font-bold text-white mt-2 mb-2">Sáng tạo Content với AI</h4>
+                    <p class="text-sm font-medium text-accentGreen/90 mb-4">
+                        Ứng dụng trí tuệ nhân tạo để lên ý tưởng, xây dựng kịch bản và sản xuất nội dung số đa phương tiện.
+                    </p>
+                    <div class="pt-4 border-t border-slate-800/50 w-full mb-4">
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            <strong>Chi tiết triển khai:</strong> Thiết kế Infographic "Cẩm nang Bảo mật Gen Z". Sử dụng ChatGPT lên dàn ý 4 mục với văn phong hiện đại. Dùng DALL-E 3 tạo hình minh họa 3D sắc nét và Canva AI để tách nền, biên tập bố cục.
+                        </p>
+                    </div>
+                    <a href="assignments/Tuan5.pdf" target="_blank" class="inline-flex items-center text-xs font-bold text-accentGreen bg-accentGreen/10 border border-accentGreen/30 px-4 py-2 rounded-lg hover:bg-accentGreen hover:text-spaceDark transition-all duration-300">
+                        <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Xem báo cáo chi tiết
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative pl-8 group">
+                <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-spaceDark border-2 border-accentViolet group-hover:bg-accentViolet transition-colors duration-300"></div>
+                <div class="bg-panelDark/40 border border-slate-800/80 rounded-xl p-6 hover:border-slate-700/60 transition-all flex flex-col items-start">
+                    <span class="text-xs font-mono text-accentViolet tracking-widest font-bold">06 - TUẦN 6</span>
+                    <h4 class="text-xl font-bold text-white mt-2 mb-2">Đạo đức & Trách nhiệm AI</h4>
+                    <p class="text-sm font-medium text-accentViolet/90 mb-4">
+                        Tìm hiểu về bản quyền, tính minh bạch và các nguyên tắc đạo đức cốt lõi khi sử dụng AI trong học thuật.
+                    </p>
+                    <div class="pt-4 border-t border-slate-800/50 w-full mb-4">
+                        <p class="text-xs text-textMuted leading-relaxed">
+                            <strong>Chi tiết triển khai:</strong> Nghiên cứu chính sách liêm chính của ĐHQGHN. Thực hành lập dàn ý thuyết trình tác động AI, chủ động Fact-check bổ sung số liệu từ Tổng cục Thống kê (GSO). Đúc kết bộ 5 nguyên tắc cá nhân.
+                        </p>
+                    </div>
+                    <a href="assignments/Tuan6.pdf" target="_blank" class="inline-flex items-center text-xs font-bold text-accentViolet bg-accentViolet/10 border border-accentViolet/30 px-4 py-2 rounded-lg hover:bg-accentViolet hover:text-white transition-all duration-300">
+                        <i class="fa-solid fa-arrow-up-right-from-square mr-2"></i> Xem báo cáo chi tiết
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="bento-report" class="scroll-mt-24">
+        <div class="mb-12">
+            <h3 class="text-2xl font-black text-white">Đánh Giá Toàn Diện</h3>
+            <p class="text-sm text-textMuted mt-1">Phân tích sự trưởng thành của bản thân sau chuỗi 6 nhiệm vụ thực hành.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="md:col-span-2 bg-panelDark border border-slate-800/60 rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="text-accentGreen text-xl mb-3"><i class="fa-solid fa-brain"></i></div>
+                    <h4 class="text-base font-bold text-white mb-2">01. Trải nghiệm & Sự thay đổi tư duy</h4>
+                    <p class="text-xs text-textMuted leading-relaxed">
+                        Trải qua chuỗi bài tập, tôi nhận ra sự dịch chuyển to lớn trong quy trình làm việc số. Việc kết hợp các AI tạo sinh như ChatGPT và DALL-E 3 đã thay đổi vai trò của tôi từ một người xử lý tác vụ thủ công trở thành một người điều phối và biên tập nội dung, tối ưu hóa thời gian thiết kế tài liệu từ nhiều ngày xuống chỉ còn vài giờ đồng hồ. Tư duy thiết lập ngữ cảnh và ràng buộc đầu ra cho AI là kỹ năng cốt lõi được định hình rõ nét nhất.
+                    </p>
+                </div>
+                <div class="mt-4 pt-4 border-t border-slate-800 text-[11px] font-mono text-accentGreen">
+                    // Vai trò chuyển đổi: Thợ chế tác -> Đạo diễn nghệ thuật
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-b from-panelDark to-spaceDark border border-slate-800/60 rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="text-accentViolet text-xl mb-3"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h4 class="text-base font-bold text-white mb-2">02. Kỹ năng Cốt lõi Đạt được</h4>
+                    <ul class="text-xs text-textMuted space-y-2 list-none">
+                        <li><i class="fa-solid fa-check text-accentGreen mr-2"></i>Ứng dụng thành thạo Trello, Discord, Docs.</li>
+                        <li><i class="fa-solid fa-check text-accentGreen mr-2"></i>Kỹ nghệ Prompt (Role-playing, Few-shot).</li>
+                        <li><i class="fa-solid fa-check text-accentGreen mr-2"></i>Đánh giá nguồn tin chuẩn định dạng Harvard.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="md:col-span-3 bg-panelDark border border-slate-800/60 rounded-2xl p-6">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                    <div class="space-y-2">
+                        <h4 class="text-base font-bold text-white flex items-center">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-500 mr-2"></i>
+                            03. Thách thức lớn nhất & Giải pháp Đạo đức
+                        </h4>
+                        <p class="text-xs text-textMuted max-w-2xl leading-relaxed">
+                            Rào cản lớn nhất khi làm việc với AI là tính chính xác của dữ liệu và rủi ro gian lận học thuật. Để khắc phục, tôi đã thiết lập bộ 5 nguyên tắc đạo đức kim chỉ nam, coi AI hoàn toàn chỉ là "Trợ lý", tuân thủ tuyệt đối quy trình kiểm chứng chéo (Fact-check) số liệu với các nguồn tin cậy (như Tổng cục Thống kê) và luôn minh bạch trong việc trích dẫn nguồn hỗ trợ AI trên các sản phẩm cuối cùng.
+                        </p>
+                    </div>
+                    <div class="bg-spaceDark border border-slate-800 p-4 rounded-xl text-center shrink-0 flex flex-col items-center justify-center">
+                        <span class="block text-2xl font-black text-white">5</span>
+                        <span class="text-[10px] text-textMuted uppercase font-mono tracking-wider">Nguyên tắc Liêm chính</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

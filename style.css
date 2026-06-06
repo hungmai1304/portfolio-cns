@@ -1,0 +1,23 @@
+
+body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+    background: #131A26;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8B5CF6;
+}
+.nav-link.active-section {
+    color: #FFFFFF !important;
+    background-color: #0B0F19 !important;
+    border-left: 3px solid #10B981;
+    padding-left: 13px;
+}
