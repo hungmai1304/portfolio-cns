@@ -117,6 +117,7 @@
 
 <main class="md:ml-64 lg:ml-80 min-h-screen p-6 lg:p-12 space-y-24 max-w-5xl relative z-10">
 
+    <!-- INTRO -->
     <section id="introduction" class="pt-6 md:pt-12 scroll-mt-24">
         <div class="mb-8">
             <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">Xin chào, em là <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-500">Mai Ngọc Hùng</span></h2>
@@ -129,18 +130,33 @@
             </div>
         </div>
 
-        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-slate-200 shadow-sm leading-relaxed text-slate-600 text-sm md:text-base space-y-5">
-            <p>Là một sinh viên Khoa Công nghệ Thông tin đầy nhiệt huyết, em luôn nỗ lực xây dựng nền tảng vững chắc về khoa học máy tính và tư duy hệ thống. Bên cạnh việc tập trung phát triển các ứng dụng bằng ngôn ngữ Java và nghiên cứu các thuật toán cốt lõi, em cũng thường dành thời gian giải trí với các tựa game chiến thuật mô phỏng để rèn luyện sự nhạy bén và tư duy logic.</p>
-            <p>Trong môi trường học tập và làm việc nhóm, em đề cao sự minh bạch, kỷ luật và tinh thần hợp tác. Phương châm của em là không ngừng cập nhật công nghệ, ứng dụng linh hoạt trí tuệ nhân tạo vào thực tiễn để giải quyết vấn đề một cách sáng tạo, hiệu quả và luôn tuân thủ các nguyên tắc đạo đức nghề nghiệp.</p>
+        <!-- BỐ CỤC CHỮ BÊN TRÁI - ẢNH BÊN PHẢI -->
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+
+            <!-- Khung chữ (Bên trái) -->
+            <div class="md:w-2/3 bg-white/80 backdrop-blur-sm rounded-2xl p-8 md:p-10 border border-slate-200 shadow-sm leading-relaxed text-slate-600 text-sm md:text-base space-y-5">
+                <p>Là một sinh viên Khoa Công nghệ Thông tin đầy nhiệt huyết, em luôn nỗ lực xây dựng nền tảng vững chắc về khoa học máy tính và tư duy hệ thống. Bên cạnh việc tập trung phát triển các ứng dụng bằng ngôn ngữ Java và nghiên cứu các thuật toán cốt lõi, em cũng thường dành thời gian giải trí với các tựa game chiến thuật mô phỏng để rèn luyện sự nhạy bén và tư duy logic.</p>
+                <p>Trong môi trường học tập và làm việc nhóm, em đề cao sự minh bạch, kỷ luật và tinh thần hợp tác. Phương châm của em là không ngừng cập nhật công nghệ, ứng dụng linh hoạt trí tuệ nhân tạo vào thực tiễn để giải quyết vấn đề một cách sáng tạo, hiệu quả và luôn tuân thủ các nguyên tắc đạo đức nghề nghiệp.</p>
+            </div>
+
+            <!-- Khung ảnh (Bên phải) -->
+            <div class="md:w-1/3 flex justify-center">
+                <div class="relative group">
+                    <!-- Hiệu ứng viền phát sáng đằng sau ảnh -->
+                    <div class="absolute -inset-2 bg-gradient-to-r from-blue-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+
+                    <!-- Lưu ý: Đổi thành avatar.jpg nếu ảnh của em đuôi jpg nhé -->
+                    <img src="avatar.png" alt="Mai Ngọc Hùng" class="relative w-full max-w-[250px] h-auto rounded-2xl shadow-lg border-4 border-white object-cover transform transition duration-500 group-hover:scale-105 group-hover:-translate-y-2">
+                </div>
+            </div>
+
         </div>
 
-        <!-- KHÁM PHÁ THÊM -->
-        <div class="flex flex-col items-center mt-10 select-none">
-            <a href="#overview" class="flex flex-col items-center gap-2 group cursor-pointer">
-                <span class="text-[11px] font-mono font-bold tracking-[0.2em] uppercase text-slate-400 group-hover:text-pink-500 transition-colors duration-300">Khám phá thêm</span>
-                <svg class="w-5 h-5 text-slate-400 group-hover:text-pink-500 transition-colors duration-300 bounce-arrow" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-                </svg>
+        <!-- Nút Khám phá thêm -->
+        <div class="mt-10 text-center">
+            <a href="#overview" class="inline-flex items-center text-xs font-bold text-slate-400 hover:text-pink-600 transition-colors uppercase tracking-widest group">
+                Khám phá thêm
+                <i class="fa-solid fa-arrow-down ml-2 animate-bounce"></i>
             </a>
         </div>
     </section>
